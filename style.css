@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #00a85a;
+    color: white;
+}
+#header{
+    width: 100%;    
+}
+.container{
+    padding: 10px 10%;
+}
+#header .container{
+    background-color: white;
+
+}
+   
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #00a85a;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00a85a;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+nav ul li a:hover{
+    color: #d9a98a;
+}
+nav ul li img{
+    height: 86px;
+    object-fit: none;
+}
+
+/* -----about------- */
+
+#about{
+    padding: 125px 0;
+}
+
+.para h1{
+    animation: fadeInUp 1s ease 0.5s both;
+    font-size: 5rem;
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+
+0% {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+.para h2{
+    font-size: 4.5rem;
+    text-align: center;
+    padding-top: 40px;
+    /* animation: fadeInUp 1s ease 1.5s both; */
+}
+.animate__zoomInDown{
+    --animate-duration: 5s;
+     --animate-delay: 4s;
+}
+.sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.sections .col-1{
+    flex-basis: 40%;
+}
+.sections .col-2{
+    flex-basis: 55%;
+}
+.sections .col-2 h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.sections .col-2 p{
+    font-size: 21px;
+    padding-block: 15px;
+    padding-bottom: 30px;
+}
+.col-2 button{
+    padding: 15px;
+    font-size: 15px;
+    background-color: #00a85a;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    color: #fff;
+    font-style: bold;
+}
