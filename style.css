@@ -1,33 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #00a85a;
+    --secondary-color: #d9a98a;
+    --text-foreground: #333;
+    --text-background: #fff;
 }
 html{
     scroll-behavior: smooth;
-}
-body{
-    background: #00a85a;
-    color: white;
 }
 #header{
     width: 100%;    
 }
 .container{
     padding: 10px 10%;
+    color: var(--text-foreground);
 }
-#header .container{
-    background-color: white;
 
-}
-   
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    
 }
 nav ul li{
     display: inline-block;
@@ -51,7 +53,7 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 100%;
-
+    
 }
 nav ul li a:hover{
     color: #d9a98a;
@@ -65,11 +67,12 @@ nav ul li img{
 
 #about{
     padding: 125px 0;
+    background: var(--primary-color);
 }
 
 .para h1{
     animation: fadeInUp 1s ease 0.5s both;
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
 }
 
@@ -87,9 +90,9 @@ nav ul li img{
 
 }
 .para h2{
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     text-align: center;
-    padding-top: 40px;
+    animation: fadeInUp 0.8s ease 0.7s both;
     /* animation: fadeInUp 1s ease 1.5s both; */
 }
 .animate__zoomInDown{
@@ -100,7 +103,7 @@ nav ul li img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    gap: 20px;
 }
 .sections .col-1{
     flex-basis: 40%;
@@ -125,4 +128,14 @@ nav ul li img{
     border-radius: 7px;
     color: #fff;
     font-style: bold;
+}
+
+@media (max-width: 1024px) {
+    .sections {
+        flex-direction: column-reverse;
+    }
+    .sections .col-1,
+    .sections .col-2 {
+        flex-basis: 100%;
+    }
 }
