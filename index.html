@@ -4,60 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" href="small.png">
-    <title>Capstone Tech-hub</title>
+    <title>Capstone Tech-Hub - Empowering Through Technology</title>
 </head>
 <body>
-    <div id="header">
+    <!-- Header with Navigation -->
+    <header id="header">
         <div class="container">
             <nav>
-                <div class="image1">
-                    <ul><a href="index.html">
-                            <li> <img class="icon-1" src="./assets/pic2.png" alt=""></li>
-                        </a>
-                    </ul>
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="icon-1" src="./assets/pic2.png" alt="Capstone Tech-Hub Logo">
+                    </a>
                 </div>
-                <div>
-                    <ul class="nav1">
-                        <li><a href="index.html"><span>Home</span></a></li>
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active"><span>Home</span></a></li>
                         <li><a href="about.html"><span>About</span></a></li>
                         <li><a href="courses.html"><span>Courses</span></a></li>
+                        <li><a href="gallery.html"><span>Gallery</span></a></li>
                         <li><a href="blog.html"><span>Blog</span></a></li>
                         <li><a href="contact.html"><span>Contact</span></a></li>
                         <li><a href="login.html" class="btn">Login/Register</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
+        </div>
+    </header>
 
-        </div>
-        
-    </div>
-    <div id="about">
+    <!-- Hero Section -->
+    <section id="hero">
         <div class="container">
-            <div class="para">
-                <h1>The Capstone Presents</h1>
-                <h2 class="animate__animated animate__zoomInDown">The Tech-HUb Program</h2>
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInUp">The Capstone Presents</h1>
+                <h2 class="animate__animated animate__zoomInDown">The Tech-HUB Program</h2>
+                <p class="subtitle animate__animated animate__fadeInUp">Transforming Lives Through Technology and Faith</p>
+                <a href="#programs" class="cta-button">Get Started</a>
             </div>
-            
         </div>
-    </div>
-    <div id="section">
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs">
         <div class="container">
-            <div class="sections">
-                <div class="col-1">
-                    <img src="./assets/pic4.jpg" alt="">
+            <div class="section-content">
+                <div class="col-image">
+                    <img src="./assets/pic4.jpg" alt="Students learning technology">
                 </div>
-                <div class="col-2">
-                    <h1>Gain Strong Foundations for the Market</h1>
-                    <p>Embark on a transformative journey toward tech excellence with ALX Foundations, the core of all ALX programmes. Over 8 weeks, you’ll gain essential skills crucial for thriving in the professional tech world.</p>
-                    <button>Explore Programmes</button>
+                <div class="col-text">
+                    <h2>Gain Strong Foundations for the Market</h2>
+                    <p>Embark on a transformative journey toward tech excellence with our Tech-Hub Foundations program. Over 8 weeks, you'll gain essential skills crucial for thriving in the professional tech world.</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">💻</div>
+                            <h3>Hands-On Learning</h3>
+                            <p>Practical projects and real-world applications</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">👥</div>
+                            <h3>Community Support</h3>
+                            <p>Learn alongside fellow believers</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎓</div>
+                            <h3>Expert Mentorship</h3>
+                            <p>Guidance from experienced professionals</p>
+                        </div>
+                    </div>
+                    
+                    <button class="explore-btn">Explore Programmes</button>
                 </div>
-        </div>
             </div>
-            
-    </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Learning Community</h2>
+                <p>See our students in action as they learn, grow, and master new tech skills</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./assets/gallery/class-session-1.jpg" alt="Students learning design and development">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Design & Development Workshop</h3>
+                            <p>Students learning creative design principles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/gallery/class-session-2.jpg" alt="Interactive learning session">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Interactive Learning</h3>
+                            <p>Engaging sessions with hands-on practice</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/gallery/class-session-3.jpg" alt="Video production training">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">
+                            <h3>Media Production Class</h3>
+                            <p>Learning professional video production</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <a href="gallery.html" class="view-more-btn">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Students Trained</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Courses Offered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Success Rate %</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Years of Impact</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Capstone Tech-Hub</h3>
+                    <p>Empowering individuals through technology education rooted in faith and excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@capstonetechhub.org</p>
+                    <p>Phone: +234 XXX XXX XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Capstone Tech-Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

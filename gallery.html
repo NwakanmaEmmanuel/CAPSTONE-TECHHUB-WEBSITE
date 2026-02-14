@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="icon" href="small.png">
+    <title>Gallery - Capstone Tech-Hub</title>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="icon-1" src="./assets/pic2.png" alt="Capstone Tech-Hub Logo">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="about.html"><span>About</span></a></li>
+                        <li><a href="courses.html"><span>Courses</span></a></li>
+                        <li><a href="blog.html"><span>Blog</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                        <li><a href="login.html" class="btn">Login/Register</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Capturing moments of learning, growth, and transformation</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="workshops">Workshops</button>
+                <button class="filter-btn" data-filter="classes">Classes</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+
+            <div class="gallery-masonry">
+                <!-- Design Workshop -->
+                <div class="gallery-card" data-category="workshops classes">
+                    <div class="card-image">
+                        <img src="./assets/gallery/class-session-1.jpg" alt="Design and Development Workshop">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Workshop</span>
+                        <h3>Design & Development Masterclass</h3>
+                        <p>Students exploring the fundamentals of visual design and user experience with hands-on projects and real-world applications.</p>
+                        <div class="card-meta">
+                            <span>📅 July 2025</span>
+                            <span>👥 50+ Students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Learning Session -->
+                <div class="gallery-card" data-category="classes">
+                    <div class="card-image">
+                        <img src="./assets/gallery/class-session-2.jpg" alt="Interactive Learning Session">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Class Session</span>
+                        <h3>Interactive Tech Training</h3>
+                        <p>An engaging classroom environment where students actively participate in discussions and collaborative problem-solving exercises.</p>
+                        <div class="card-meta">
+                            <span>📅 June 2025</span>
+                            <span>👥 40+ Students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media Production Class -->
+                <div class="gallery-card" data-category="workshops classes">
+                    <div class="card-image">
+                        <img src="./assets/gallery/class-session-3.jpg" alt="Media Production Training">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Media Production</span>
+                        <h3>Video Production Workshop</h3>
+                        <p>Professional video production training with industry-standard equipment, teaching students camera work, lighting, and editing techniques.</p>
+                        <div class="card-meta">
+                            <span>📅 July 2025</span>
+                            <span>👥 35+ Students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for more photos -->
+                <div class="gallery-card upload-card">
+                    <div class="upload-content">
+                        <div class="upload-icon">📸</div>
+                        <h3>More Photos Coming Soon!</h3>
+                        <p>We're constantly capturing the amazing moments at our tech hub. Check back regularly for new updates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="gallery-bottom-cta">
+                <h2>Want to Be Part of Our Story?</h2>
+                <p>Join hundreds of students who are transforming their lives through technology education</p>
+                <div class="cta-buttons">
+                    <a href="courses.html" class="primary-btn">View Our Courses</a>
+                    <a href="contact.html" class="secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Capstone Tech-Hub</h3>
+                    <p>Empowering individuals through technology education rooted in faith and excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@capstonetechhub.org</p>
+                    <p>Phone: +234 XXX XXX XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Capstone Tech-Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
